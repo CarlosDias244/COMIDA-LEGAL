@@ -5,30 +5,21 @@ export default function SecondaryScreen({navigation}){
 
   return(
      <View style={styles.container}>
-     <Text style={style.title}>
-     escolha sua delicia!</Text>
+     <Text style={style.title}> escolha sua delicia!</Text>
 
      <View style={styles.buttonContainer}>
-     <Button title="Café" onPress={()=>navigation.navigate('Café')}
-     color="#a0522d"
-     />
+     <Button title="Café" onPress={()=>navigation.navigate('Café')} color="#a0522d"/>
 
      <View style={styles.buttonContainer}>
-     <Button title="Bolo de Chocolate" onPress={() => navigation.navigate('Bolo')}
-     color="#8b4513"
-     />
+     <Button title="Bolo de Chocolate" onPress={() => navigation.navigate('Bolo')} color="#8b4513"/>
   </View>
 
      <View style={style.buttonContainer}>
-     <Button title="Pão Caseiro" onPress={() => navigation.navigate('Pão')}
-     color="#deb887"
-     />
+     <Button title="Pão Caseiro" onPress={() => navigation.navigate('Pão')} color="#deb887"/>
     </View>
    </View>    
-  );
+  )
 }
-
-export default function SecondaryScreen (
 
 const styles = StyleSheet.create({
   container: {
