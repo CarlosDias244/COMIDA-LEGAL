@@ -1,15 +1,18 @@
 import React from 'react';
+import{ View, Text, Button, StyleSheet} from 'react-native'
+
+export default function HomeScreen({ Navigation})
 
 import{ NavigationContainer} from '@react-navigation/native';
-import{ createStackNavigation} from '@react-navigation/Stack';
+import{ createStackNavigator} from '@react-navigation/Stack';
 
-import HomeScreen from './Salaminion.Screen/HomeScreen';
-import SecondaryScreen from './Salaminion.Screen/SecondaryScreen';
-import CafeScreen from './Salaminion.Screen/CafeScreen';
-import BoloScreen from './Salaminion.Screen/BoloScreen';
-import PaoScreen from './Salaminion.Screen/PaoScreen';
+import HomeScreen from './HomeScreen';
+import SecondaryScreen from './SecondaryScreen';
+import CafeScreen from './CafeScreen';
+import BoloScreen from './BoloScreen';
+import PaoScreen from './PaoScreen';
 
-const Stack = createStackNavigation();
+const Stack = createStackNavigator();
 
 export default function App() {
   return(

@@ -1,9 +1,16 @@
 import React from 'react';
+import{ View, Text, Button, StyleSheet} from 'react-native'
+
+export default function HomeScreen({ navigation}) {
+  < View style={style.container}>
+   <Text style={style.title}>Página Inicial</Text>
+   <Button title={'Ir para opcoes deliciosas'}
+}
 
 import {NavigationContainer} from '@react-navigation/navite';
-import {createStackNavigation} from '@react-navigation/stack';
+import {createStackNavigator} from '@react-navigation/stack';
 
-import HomeScreen from './Screen/HomeScreen'
+import HomeScreen from './HomeScreen'
 
 import SecondaryScreen from './SecondaryScreen';
 
@@ -13,11 +20,12 @@ import BoloScreen from './BoloScreen';
 
 import PaoScreen from './PaoScreen';
 
-const Stack = creareStackNavigator();
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
+    <Stack.Navigator>
     <Stack.Navigator initialRouteName = "Home" />
     <Stack.Screen name="Home" component={HomeScreen} options={{ title:'Bem-vindo!' }} />
     <Stack.Screen name="Secondary" component={SecondaryScreen} options={{ title: 'Opções Deliciosas' }} />

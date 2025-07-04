@@ -1,3 +1,4 @@
+import React from 'react';
 import{ View, Text, Button, StyleSheet }
 from  'react-native'
 
@@ -9,7 +10,8 @@ export default function SecondaryScreen({navigation}){
 
      <View style={styles.buttonContainer}>
      <Button title="Café" onPress={()=>navigation.navigate('Café')} color="#a0522d"/>
-
+    </View>
+     
      <View style={styles.buttonContainer}>
      <Button title="Bolo de Chocolate" onPress={() => navigation.navigate('Bolo')} color="#8b4513"/>
   </View>
@@ -40,7 +42,6 @@ const styles = StyleSheet.create({
     marginVertical: 10,
     width: '60%',
   },
-
 });
 
 
