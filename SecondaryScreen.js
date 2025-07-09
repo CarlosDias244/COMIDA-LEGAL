@@ -1,25 +1,24 @@
 import React from 'react';
-import{ View, Text, Button, StyleSheet }
-from  'react-native'
+import {View, Text, Button, StyleSheet} from 'react-native';
 
-export default function SecondaryScreen({navigation}){
+export default function ScedondaryScreen({ navigation }) {
+  return (
+    <View style={styles.container}>
+      <Text style={styles.title}> Escolha sua Delícia! </Text>
 
-  return(
-     <View style={styles.container}>
-     <Text style={style.title}> escolha sua delicia!</Text>
+      <View style={styles.buttonContainer}>
+        <Button title='Café' onPress={() => navigation.navigate('Cafe')} color='#a0522d'/>
+      </View>
 
-     <View style={styles.buttonContainer}>
-     <Button title="Café" onPress={()=>navigation.navigate('Café')} color="#a0522d"/>
+      <View style={styles.buttonContainer}>
+        <Button title='Bolo de Chocolate' onPress={() => navigation.navigate('Bolo')} color='#8b4513'/>
+      </View>
+
+      <View style={styles.buttonContainer}>
+        <Button title='Pão Caseiro' onPress={() => navigation.navigate ('Pao')} color='#deb887'/>
+      </View>
+
     </View>
-     
-     <View style={styles.buttonContainer}>
-     <Button title="Bolo de Chocolate" onPress={() => navigation.navigate('Bolo')} color="#8b4513"/>
-  </View>
-
-     <View style={style.buttonContainer}>
-     <Button title="Pão Caseiro" onPress={() => navigation.navigate('Pão')} color="#deb887"/>
-    </View>
-   </View>    
   )
 }
 
@@ -30,23 +29,15 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     backgroundColor: '#fffafa',
   },
-
   title: {
     fontSize: 26,
     fontWeight: 'bold',
     marginBottom: 40,
-    color: '#444',
+    color: '#444',    
   },
-
   buttonContainer: {
     marginVertical: 10,
     width: '60%',
   },
 });
-
-
-
-
-
-
 

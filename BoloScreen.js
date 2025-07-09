@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { View, Text, Image, StyleSheet } from 'react-native';
+import {View, Text, Image, StyleSheet} from 'react-native';
 
 export default function BoloScreen() {
-  return(
+  return (
     <View style={styles.container}>
-    <Text style={styles.title}>Um Bolo de chocolate</Text>
+    <Text style={styles.title}> Um Bolo de Chocolate fresquinho</Text>
     <Image
-      source={{ uri:'https://cdn.casaeculinaria.com/wp-content/uploads/2022/10/04101905/Bolo-de-chocolate-2.webp'}}
+      source={{uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQ4E6b08mEqh-gwyTHDkDGKa_bSWr3zIlMlg&s'}}
       style={styles.image}/>
-      <Text style={styles.description}>Uma fatia irresistivel de bolo de chocolate, perfeito para qualquer hora.</Text>
+      <Text style={styles.description}> Uma fatia irresistível de bolo de chocolate, perfeito para qualquer hora.</Text>
     </View>
   );
 }
@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItens: 'center',
-    backgroundColor: '#f8f8ff',
-    padding: 20,
+    alignItems: 'center',
+    backgroundColor: '#p8p8pp',
+    padding: 20,    
   },
   title: {
     fontSize: 24,
@@ -44,4 +44,3 @@ const styles = StyleSheet.create({
     lineHeight: 25,
   },
 });
-

@@ -1,38 +1,27 @@
 import React from 'react';
-import{ View, Text, Button, StyleSheet} from 'react-native'
+import{ View, Text, Button, StyleSheet } from 'react-native';
 
-export default function HomeScreen({ navigation}) {
-  < View style={style.container}>
-   <Text style={style.title}>Página Inicial</Text>
-   <Button title={'Ir para opcoes deliciosas'}
-}
-
-import {NavigationContainer} from '@react-navigation/navite';
-import {createStackNavigator} from '@react-navigation/stack';
-
-import HomeScreen from './HomeScreen'
-
-import SecondaryScreen from './SecondaryScreen';
-
-import CafeScreen from './CafeScreen'
-
-import BoloScreen from './BoloScreen';
-
-import PaoScreen from './PaoScreen';
-
-const Stack = createStackNavigator();
-
-export default function App() {
+export default function HomeScreen ({ navigation }) {
   return (
-    <NavigationContainer>
-    <Stack.Navigator>
-    <Stack.Navigator initialRouteName = "Home" />
-    <Stack.Screen name="Home" component={HomeScreen} options={{ title:'Bem-vindo!' }} />
-    <Stack.Screen name="Secondary" component={SecondaryScreen} options={{ title: 'Opções Deliciosas' }} />
-    <Stack.Screen name="Cafe" component={CafeScreen} options={{ title: 'Nosso Café'}} />
-    <Stack.Screen name="Bolo" component={BoloScreen} options={{ title: 'Bolo de Chocolate'}} />
-    <Stack.Screen name="Pao" component={PaoScreen} options={{ title:'Pão Caseiro' }} />
-    </Stack.Navigator>
-    </NavigationContainer>
+    <View style={styles.container}>
+    <Text style={styles.title}> Página Principal </Text>
+    <Button title= "Ir para opções deliciosas!!" onPress={() => navigation.navigate ('Secondary')} color="#841584"/>
+   </View>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1, 
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#f0f8ff',
+  },
+  title: {
+    fontSize: 28, 
+    fontWeight: 'bold',
+    marginBottom: 30,
+    color: '#333',
+   },
+});
+

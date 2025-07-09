@@ -15,12 +15,10 @@
     "@expo/vector-icons": "^14.1.0",
     "react-native-paper": "4.9.2",
     "react-native-screens": "~4.11.1",
-    "@react-navigation/Stack": "*",
     "@react-navigation/stack": "*",
     "@react-navigation/native": "*",
     "react-native-gesture-handler": "~2.24.0",
-    "react-native-safe-area-context": "5.4.0",
-    "@react-navigation/navite": "*"
+    "react-native-safe-area-context": "5.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

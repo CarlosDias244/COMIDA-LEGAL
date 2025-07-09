@@ -1,15 +1,15 @@
 import React from 'react';
 
-import { View, Text, Image, StyleSheet } from 'react-native';
+import {View, Text, Image, StyleSheet} from 'react-native';
 
 export default function CafeScreen() {
-  return(
+  return (
     <View style={styles.container}>
-    <Text style={styles.title}>Um Café fresquinho</Text>
+    <Text style={styles.title}> Um café fresquinho</Text>
     <Image
-      source={{ uri:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8UJJ9y-ryv3twJr-MRbHORLhRbdZ1ZnC5FQ&s'}}
+      source={{uri:'https://images.pexels.com/photos/1170659/pexels-photo-1170659.jpeg'}}
       style={styles.image}/>
-      <Text style={styles.description}>Comece o dia com uma xícara de café aromático e revigorante.</Text>
+      <Text style={styles.description}> Comece o dia com uma xícara de café aromático e revigorante</Text>
     </View>
   );
 }
@@ -18,9 +18,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
-    alignItens: 'center',
+    alignItems: 'center',
     backgroundColor: '#f5f5dc',
-    padding: 20,
+    padding: 20,    
   },
   title: {
     fontSize: 24,
@@ -44,8 +44,3 @@ const styles = StyleSheet.create({
     lineHeight: 25,
   },
 });
-
-
-
-
-
